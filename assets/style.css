@@ -1,0 +1,106 @@
+/* Browser Reset */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url('./fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+/* CSS Custom Properties */
+
+:root {
+    
+    --green : hsl(75, 94%, 57%);
+    --white : hsl(0, 0%, 100%);
+    --grey700 : hsl(0, 0%, 20%);
+    --grey800 : hsl(0, 0%, 12%);
+    --grey900 : hsl(0, 0%, 8%);
+    
+    --fs-base: 14px;
+    --fs-large: 28px;
+}
+
+body {
+    font-size: var(--fs-base);
+    font-family: "Inter", sans-serif;
+}
+
+
+main {
+    background-color: var(--grey900);
+    min-height: 100vh;
+    
+    /* Centralize section */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 25px;
+}
+
+
+section {
+    background-color: var(--grey800);
+    width: 400px;
+    min-height: fit-content;
+    border-radius: 15px;
+    padding: 28px;
+    
+    /* Centralize items in the section */
+    text-align: center
+}
+
+section > img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+section > h1 {
+    color: var(--white);
+    font-size: var(--fs-large);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+section > .location {
+    color: var(--green);
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+section > .quote {
+    color: var(--white);
+    margin-bottom: 25px;
+}
+
+.social-links > a {
+    display: block;
+    background-color: var(--grey700);
+    padding: 15px 20px;
+    color: var(--white);
+    text-decoration: none;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    
+    /* Transition for hover */
+    transition: all 350ms ease-in-out;
+}
+
+.social-links > a:hover{ 
+     background-color: var(--green);
+     color: var(--grey800);
+}
+
+
