@@ -46,61 +46,65 @@ main {
     padding: 25px;
 }
 
-
 section {
     background-color: var(--grey800);
-    width: 400px;
+    width: 350px;
     min-height: fit-content;
     border-radius: 15px;
-    padding: 28px;
+    padding: 15px 25px;
     
     /* Centralize items in the section */
-    text-align: center
-}
+    text-align: center;
 
-section > img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
+    img {
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
 
-section > h1 {
-    color: var(--white);
-    font-size: var(--fs-large);
-    margin-bottom: 10px;
-    font-weight: 700;
-}
-
-section > .location {
-    color: var(--green);
-    margin-bottom: 30px;
-    font-weight: 600;
-}
-
-section > .quote {
-    color: var(--white);
-    margin-bottom: 25px;
-}
-
-.social-links > a {
-    display: block;
-    background-color: var(--grey700);
-    padding: 15px 20px;
-    color: var(--white);
-    text-decoration: none;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    font-weight: 600;
+    h1 {
+        color: var(--white);
+        font-size: var(--fs-large);
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
     
-    /* Transition for hover */
-    transition: all 350ms ease-in-out;
-}
+    p{
+        &.location {
+            color: var(--green);
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
 
-.social-links > a:hover{ 
-     background-color: var(--green);
-     color: var(--grey800);
+        &.quote {
+            color: var(--white);
+            margin-bottom: 25px;
+        }
+    }
+
+    .social-links {
+
+        a{
+            display: block;
+            background-color: var(--grey700);
+            padding: 10px 15px;
+            color: var(--white);
+            text-decoration: none;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            font-weight: 600;
+            
+            /* Transition for hover */
+            transition: all 350ms ease-in-out;
+
+           &:hover{ 
+                background-color: var(--green);
+                color: var(--grey800);
+           }
+        }
+    }
 }
 
 
